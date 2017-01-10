@@ -161,17 +161,28 @@ function lastChar(word){
 //For example, if you pass the function the string “hello”, it should return “olleh”. 
 //Test your function on a few inputs, including the empty string.
 
-function reverseStr(sentence){
-    return sentence.split("").reverse().join("");
-}
+// function reverseStr(sentence){
+//     return sentence.split("").reverse().join("");
+// }
 
-console.log(reverseStr("montreal"));
-console.log(reverseStr("Decode"));
-console.log(reverseStr(""));
-
-
+// console.log(reverseStr("montreal"));
+// console.log(reverseStr("Decode"));
+// console.log(reverseStr(""));
 
 
 //Write a function that takes a number and returns the factorial of a number. 
 //The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. 
 //Test your input on a few numbers, including negative numbers.
+
+function factor(num){
+    var tmp = 1;
+    while (num > 1){
+        tmp *= num;
+        num--;
+    }
+    return tmp;
+}
+
+console.log(factor(7));
+console.log(factor(0));
+console.log(factor(-5));
