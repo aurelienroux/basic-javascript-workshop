@@ -93,15 +93,22 @@ function lastChar(word){
 //and returns the string repeated that many number of times. 
 //Test your function with various inputs.
 
-function repeatStr(str, num){
-    for(var i = 0; i < num; i++){
-        console.log(str);
+// function repeatStr(str, num){
+//     for(var i = 0; i < num; i++){
+//         console.log(str);
+//     }
+// }
+
+// repeatStr("text", 3);
+
+//Write a function that uses a for loop to print the numbers from 1 to 10 inclusively.
+
+function oneToTen(){
+    for(var i = 1; i < 11; i++){
+        console.log(i);
     }
 }
 
-repeatStr("text", 3);
-
-
-
+oneToTen();
 
 
