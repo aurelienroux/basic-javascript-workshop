@@ -8,9 +8,9 @@ function firstChar(word) {
     return word[0];
 }
 
-console.log(firstChar("decode"));
-console.log(firstChar("Montreal"));
-console.log(firstChar(""));
+// console.log(firstChar("decode"));
+// console.log(firstChar("Montreal"));
+// console.log(firstChar(""));
 
 //Write a function that takes a string and returns the last character of a string. 
 //Test your function on a few inputs, including the empty string.
@@ -20,12 +20,19 @@ function lastChar(word){
     return word[word.length - 1];
 }
 
-console.log(lastChar("decode"));
-console.log(lastChar("Montreal"));
-console.log(firstChar(""));
+// console.log(lastChar("decode"));
+// console.log(lastChar("Montreal"));
+// console.log(firstChar(""));
 
 //Write a function that takes a string and a number, 
 //and returns the character at the position represented by the number. 
 //The indexing of number should start at 0. 
 //Test your function on a few inputs, including the empty string.
 
+function locate( str, num ){
+        return str.charAt(num);
+}
+
+console.log(locate("decode", 3));
+console.log(locate("Montreal", 4));
+console.log(locate(""));
