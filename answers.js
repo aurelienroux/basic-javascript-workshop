@@ -166,3 +166,12 @@ function reverseStr(sentence){
 }
 
 console.log(reverseStr("montreal"));
+console.log(reverseStr("Decode"));
+console.log(reverseStr(""));
+
+
+
+
+//Write a function that takes a number and returns the factorial of a number. 
+//The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. 
+//Test your input on a few numbers, including negative numbers.
