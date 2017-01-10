@@ -54,11 +54,37 @@ function lastChar(word){
 //Test your function on a few inputs. 
 //Write in your comments what happens when you pass something other than a number to your function.
 
-function multiply(a, b){
-    return a * b;
+// function multiply(a, b){
+//     return a * b;
+// }
+
+// console.log(multiply(3,4));
+// console.log(multiply(5,10));
+// //function return Nan
+// console.log(multiply("text", "num"));
+
+
+//Write a function that takes two numbers and a string. 
+//If the string is ‘add’, then return the sum of the numbers. 
+//If the string is ‘subtract’, return the difference. 
+//If the string is ‘mult’, return the product. 
+//If the string is ‘div’, return the ratio. Otherwise return 0.
+
+function numberOp(action, numOne, numTwo){
+    if( action === "add"){
+        return numOne + numTwo;
+    } else if ( action === "subtract"){
+        return numOne - numTwo;
+    } else if ( action === "mult"){
+        return numOne * numTwo;
+    } else if ( action === "div"){
+        return numOne / numTwo;
+    } else {
+        return 0;
+    }
 }
 
-console.log(multiply(3,4));
-console.log(multiply(5,10));
-//function return Nan
-console.log(multiply("text", "num"));
+console.log(numberOp("add", 3, 4));
+console.log(numberOp("subtract", 30, 4));
+console.log(numberOp("mult", 3, 4));
+console.log(numberOp("div", 8, 4));
