@@ -40,12 +40,25 @@ function lastChar(word){
 //Write a function that takes two numbers and adds them together. Test your function on a few inputs. 
 //Write in the comments what happens when you pass something other than a number to your function.
 
-function add(a, b){
-    return a + b;
+// function add(a, b){
+//     return a + b;
+// }
+
+// console.log(add(4,5));
+// console.log(add(5,10));
+
+// //if Nan, the function concatenates the two inputs
+// console.log(add("text", "num"));
+
+//Write a function that takes two numbers and multiplies them together. 
+//Test your function on a few inputs. 
+//Write in your comments what happens when you pass something other than a number to your function.
+
+function multiply(a, b){
+    return a * b;
 }
 
-console.log(add(4,5));
-console.log(add(5,10));
-
-//
-console.log(add("text", "num"));
+console.log(multiply(3,4));
+console.log(multiply(5,10));
+//function return Nan
+console.log(multiply("text", "num"));
