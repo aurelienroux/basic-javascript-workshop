@@ -174,15 +174,37 @@ function lastChar(word){
 //The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. 
 //Test your input on a few numbers, including negative numbers.
 
-function factor(num){
-    var tmp = 1;
-    while (num > 1){
-        tmp *= num;
-        num--;
+// function factor(num){
+//     var tmp = 1;
+//     while (num > 1){
+//         tmp *= num;
+//         num--;
+//     }
+//     return tmp;
+// }
+
+// console.log(factor(7));
+// console.log(factor(0));
+// console.log(factor(-5));
+
+//Write a function that takes a phrase as a string, and returns the longest word 
+//in that phrase. If the phrase contains more than one such word, 
+//return the first occurrence. Test your function on a few inputs.
+
+function longWord(sentence){
+    var tmp = sentence.split(" ");
+    var fin = 0;
+    var sol;
+    
+    for(var i = 0; i < tmp.length - 1; i++){
+        if(tmp[i].length > fin ){
+            fin = tmp[i].length;
+            sol = tmp[i];
+        }
     }
-    return tmp;
+    return sol;
 }
 
-console.log(factor(7));
-console.log(factor(0));
-console.log(factor(-5));
+console.log(longWord("hello universe this is a sentence"));
+console.log(longWord("hello world this is a word"));
+console.log(longWord("hi country this is a number"));
