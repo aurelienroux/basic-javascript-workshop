@@ -29,10 +29,23 @@ function lastChar(word){
 //The indexing of number should start at 0. 
 //Test your function on a few inputs, including the empty string.
 
-function locate( str, num ){
-        return str.charAt(num);
+// function locate( str, num ){
+//         return str.charAt(num);
+// }
+
+// console.log(locate("decode", 3));
+// console.log(locate("Montreal", 4));
+// console.log(locate(""));
+
+//Write a function that takes two numbers and adds them together. Test your function on a few inputs. 
+//Write in the comments what happens when you pass something other than a number to your function.
+
+function add(a, b){
+    return a + b;
 }
 
-console.log(locate("decode", 3));
-console.log(locate("Montreal", 4));
-console.log(locate(""));
+console.log(add(4,5));
+console.log(add(5,10));
+
+//
+console.log(add("text", "num"));
