@@ -191,20 +191,39 @@ function lastChar(word){
 //in that phrase. If the phrase contains more than one such word, 
 //return the first occurrence. Test your function on a few inputs.
 
-function longWord(sentence){
-    var tmp = sentence.split(" ");
-    var fin = 0;
-    var sol;
+// function longWord(sentence){
+//     var tmp = sentence.split(" ");
+//     var fin = 0;
+//     var sol;
     
-    for(var i = 0; i < tmp.length - 1; i++){
-        if(tmp[i].length > fin ){
-            fin = tmp[i].length;
-            sol = tmp[i];
-        }
+//     for(var i = 0; i < tmp.length - 1; i++){
+//         if(tmp[i].length > fin ){
+//             fin = tmp[i].length;
+//             sol = tmp[i];
+//         }
+//     }
+//     return sol;
+// }
+
+// console.log(longWord("hello universe this is a sentence"));
+// console.log(longWord("hello world this is a word"));
+// console.log(longWord("hi country this is a number"));
+
+//Write a function that takes a phrase, and returns the same phrase with 
+//every word capitalized. For example, if you pass your function "hello world", 
+//it should return "Hello World" and if you pass it "HELLO WORLD" or even 
+//"HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs.
+
+function capitalSent(sent){
+    sent = sent.toLowerCase().split(" ");
+
+    for(var i = 0; i < sent.length; i ++){
+        sent[i] = sent[i].charAt(0).toUpperCase() + sent[i].slice(1);
     }
-    return sol;
+    console.log(sent = sent.join(" "));
 }
 
-console.log(longWord("hello universe this is a sentence"));
-console.log(longWord("hello world this is a word"));
-console.log(longWord("hi country this is a number"));
+// console.log(capitalSent("HellO WorLd this iS a seNtEnce"));
+capitalSent("HellO WorLd this iS a seNtEnce");
+capitalSent("HellO uNIverSe this iS a WOrd");
+capitalSent("HellO CouNtRy this iS a NumBEr");
