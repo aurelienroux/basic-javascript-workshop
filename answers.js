@@ -146,13 +146,23 @@ function lastChar(word){
 //Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, 
 //but for each number, print it that many number of times:
 
-function loopNum(){
+// function loopNum(){
     
-    for(var i = 1; i < 11; i++){
-        for(var j = 0; j < i; j++){
-            console.log(i);
-        }
-    }
+//     for(var i = 1; i < 11; i++){
+//         for(var j = 0; j < i; j++){
+//             console.log(i);
+//         }
+//     }
+// }
+
+// loopNum();
+
+//Write a function that takes a string, and returns the reverse of that string. 
+//For example, if you pass the function the string “hello”, it should return “olleh”. 
+//Test your function on a few inputs, including the empty string.
+
+function reverseStr(sentence){
+    return sentence.split("").reverse().join("");
 }
 
-loopNum();
+console.log(reverseStr("montreal"));
