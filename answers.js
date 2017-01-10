@@ -115,30 +115,44 @@ function lastChar(word){
 //but as words ("one", "two", ...). As an extra challenge, 
 //try to find a solution that does not use an if/else:
 
-function countFunc(){
+// function countFunc(){
+//     for(var i = 1; i < 11; i++){
+//         if ( i === 1 ){
+//             console.log("one");
+//         } else if ( i === 2){
+//             console.log("two");
+//         } else if ( i === 3){
+//             console.log("three");
+//         } else if ( i === 4){
+//             console.log("four");
+//         } else if ( i === 5){
+//             console.log("five");
+//         } else if ( i === 6){
+//             console.log("six");
+//         } else if ( i === 7){
+//             console.log("seven");
+//         } else if ( i === 8){
+//             console.log("eight");
+//         } else if ( i === 9){
+//             console.log("nine");
+//         } else {
+//             console.log("ten");
+//         }
+//     }
+// }
+
+// countFunc();
+
+//Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, 
+//but for each number, print it that many number of times:
+
+function loopNum(){
+    
     for(var i = 1; i < 11; i++){
-        if ( i === 1 ){
-            console.log("one");
-        } else if ( i === 2){
-            console.log("two");
-        } else if ( i === 3){
-            console.log("three");
-        } else if ( i === 4){
-            console.log("four");
-        } else if ( i === 5){
-            console.log("five");
-        } else if ( i === 6){
-            console.log("six");
-        } else if ( i === 7){
-            console.log("seven");
-        } else if ( i === 8){
-            console.log("eight");
-        } else if ( i === 9){
-            console.log("nine");
-        } else {
-            console.log("ten");
+        for(var j = 0; j < i; j++){
+            console.log(i);
         }
     }
 }
 
-countFunc();
+loopNum();
