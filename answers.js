@@ -70,21 +70,38 @@ function lastChar(word){
 //If the string is ‘mult’, return the product. 
 //If the string is ‘div’, return the ratio. Otherwise return 0.
 
-function numberOp(action, numOne, numTwo){
-    if( action === "add"){
-        return numOne + numTwo;
-    } else if ( action === "subtract"){
-        return numOne - numTwo;
-    } else if ( action === "mult"){
-        return numOne * numTwo;
-    } else if ( action === "div"){
-        return numOne / numTwo;
-    } else {
-        return 0;
+// function numberOp(action, numOne, numTwo){
+//     if( action === "add"){
+//         return numOne + numTwo;
+//     } else if ( action === "subtract"){
+//         return numOne - numTwo;
+//     } else if ( action === "mult"){
+//         return numOne * numTwo;
+//     } else if ( action === "div"){
+//         return numOne / numTwo;
+//     } else {
+//         return 0;
+//     }
+// }
+
+// console.log(numberOp("add", 3, 4));
+// console.log(numberOp("subtract", 30, 4));
+// console.log(numberOp("mult", 3, 4));
+// console.log(numberOp("div", 8, 4));
+
+//Write a function that takes a string and a number, 
+//and returns the string repeated that many number of times. 
+//Test your function with various inputs.
+
+function repeatStr(str, num){
+    for(var i = 0; i < num; i++){
+        console.log(str);
     }
 }
 
-console.log(numberOp("add", 3, 4));
-console.log(numberOp("subtract", 30, 4));
-console.log(numberOp("mult", 3, 4));
-console.log(numberOp("div", 8, 4));
+repeatStr("text", 3);
+
+
+
+
+
