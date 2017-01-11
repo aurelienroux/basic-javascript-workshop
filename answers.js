@@ -271,22 +271,48 @@ function lastChar(word){
 //look up array methods indexOf and slice.
 
 
-function twoArr(a, b){
-    var tmp = [];
+// function twoArr(a, b){
+//     var tmp = [];
 
-    for(var i = 0; i < a.length; i++){
-        for (var j = 0; j < b.length; j++){
-            if( a[i] === b[j] ){
-                tmp.push(a[i]);
-            }
-        }
-    }
+//     for(var i = 0; i < a.length; i++){
+//         for (var j = 0; j < b.length; j++){
+//             if( a[i] === b[j] ){
+//                 tmp.push(a[i]);
+//             }
+//         }
+//     }
     
-    for(var i = 0; i < tmp.length; i++){
-        a.splice(a.indexOf(tmp[i]),1);
-        b.splice(b.indexOf(tmp[i]),1);
+//     for(var i = 0; i < tmp.length; i++){
+//         a.splice(a.indexOf(tmp[i]),1);
+//         b.splice(b.indexOf(tmp[i]),1);
+//     }
+//     return a.concat(b);
+// }
+
+// console.log(twoArr([1,2,3], [1,2,4,5]));
+
+//Mini Challenge: write a function that takes an array and a function 
+//as arguments. The function should return a new array that maps every 
+//element of the input array by passing it through the function 
+//you received. You are not allowed to use Array.map for this challenge, 
+//otherwise it would be too easy :)
+
+function mapping(arr, func){
+    var tmp = [];
+    for (var i = 0; i < arr.length; i++ ) {
+        tmp.push(func(arr[i]));
     }
-    return a.concat(b);
+    return tmp;
 }
 
-console.log(twoArr([1,2,3], [1,2,4,5]));
+console.log(mapping([4,5,6,7], function(val){
+    return val * 2;
+}));
+
+
+
+
+
+
+
+
