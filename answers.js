@@ -249,7 +249,7 @@ function lastChar(word){
 
 // function truth(arr){
 //     arr = arr.filter(function(item){
-//         return Boolean(item) === false;
+//         return Boolean(item) ==false;
 //     });
 //     return arr;
 // }
@@ -259,8 +259,34 @@ function lastChar(word){
 //Write a function that takes an array of numbers, 
 //and returns the sum of all the numbers in the array.
 
-function sumAll(arr){
-    return arr = arr.reduce(function(a,b) {return a + b});
+// function sumAll(arr){
+//     return arr = arr.reduce(function(a,b) {return a + b});
+// }
+
+// console.log(sumAll([12, 23, 34, 45]));
+
+//Write a function that takes two arrays, and returns an array of all elements 
+//that are only in one array. For example, with [1,2,3] and [1,2,4,5] the function 
+//should return [3,4,5]. Test your function on different inputs. Hint: you should 
+//look up array methods indexOf and slice.
+
+
+function twoArr(a, b){
+    var tmp = [];
+
+    for(var i = 0; i < a.length; i++){
+        for (var j = 0; j < b.length; j++){
+            if( a[i] === b[j] ){
+                tmp.push(a[i]);
+            }
+        }
+    }
+    
+    for(var i = 0; i < tmp.length; i++){
+        a.splice(a.indexOf(tmp[i]),1);
+        b.splice(b.indexOf(tmp[i]),1);
+    }
+    return a.concat(b);
 }
 
-console.log(sumAll([12, 23, 34, 45]));
+console.log(twoArr([1,2,3], [1,2,4,5]));
