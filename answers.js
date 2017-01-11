@@ -231,19 +231,27 @@ function lastChar(word){
 //Write a function that takes an array and returns the largest number of the array. 
 //Test your function on a few inputs.
 
-function maximum(arr){
-    arr = arr.sort(function(a, b){
-        return b - a;
-    })
-    console.log(arr[0]);
+// function maximum(arr){
+//     arr = arr.sort(function(a, b){
+//         return b - a;
+//     })
+//     console.log(arr[0]);
+// }
+
+// // console.log(maximum([12, 34, 56, 78]));
+// maximum([12, 34, 56, 78]);
+// maximum([12, 3334, 526, 7]);
+// maximum([129, 434, 5556, 738]);
+
+//Write a function that takes an array, and returns a filtered array. 
+//The filtered array should only contain the truthy values from the initial array. 
+//Hint: there is an array method called filter that can help you with this :)
+
+function truth(arr){
+    arr = arr.filter(function(item){
+        return Boolean(item) === false;
+    });
+    return arr;
 }
 
-// console.log(maximum([12, 34, 56, 78]));
-maximum([12, 34, 56, 78]);
-maximum([12, 3334, 526, 7]);
-maximum([129, 434, 5556, 738]);
-
-
-
-
-
+console.log(truth([false, null, undefined, NaN, "Aurelien", -8, 0, true, 1, 19]))
