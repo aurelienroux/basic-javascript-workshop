@@ -247,11 +247,20 @@ function lastChar(word){
 //The filtered array should only contain the truthy values from the initial array. 
 //Hint: there is an array method called filter that can help you with this :)
 
-function truth(arr){
-    arr = arr.filter(function(item){
-        return Boolean(item) === false;
-    });
-    return arr;
+// function truth(arr){
+//     arr = arr.filter(function(item){
+//         return Boolean(item) === false;
+//     });
+//     return arr;
+// }
+
+// console.log(truth([false, null, undefined, NaN, "Aurelien", -8, 0, true, 1, 19]))
+
+//Write a function that takes an array of numbers, 
+//and returns the sum of all the numbers in the array.
+
+function sumAll(arr){
+    return arr = arr.reduce(function(a,b) {return a + b});
 }
 
-console.log(truth([false, null, undefined, NaN, "Aurelien", -8, 0, true, 1, 19]))
+console.log(sumAll([12, 23, 34, 45]));
