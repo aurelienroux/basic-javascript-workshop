@@ -214,16 +214,36 @@ function lastChar(word){
 //it should return "Hello World" and if you pass it "HELLO WORLD" or even 
 //"HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs.
 
-function capitalSent(sent){
-    sent = sent.toLowerCase().split(" ");
+// function capitalSent(sent){
+//     sent = sent.toLowerCase().split(" ");
 
-    for(var i = 0; i < sent.length; i ++){
-        sent[i] = sent[i].charAt(0).toUpperCase() + sent[i].slice(1);
-    }
-    console.log(sent = sent.join(" "));
+//     for(var i = 0; i < sent.length; i ++){
+//         sent[i] = sent[i].charAt(0).toUpperCase() + sent[i].slice(1);
+//     }
+//     console.log(sent = sent.join(" "));
+// }
+
+// // console.log(capitalSent("HellO WorLd this iS a seNtEnce"));
+// capitalSent("HellO WorLd this iS a seNtEnce");
+// capitalSent("HellO uNIverSe this iS a WOrd");
+// capitalSent("HellO CouNtRy this iS a NumBEr");
+
+//Write a function that takes an array and returns the largest number of the array. 
+//Test your function on a few inputs.
+
+function maximum(arr){
+    arr = arr.sort(function(a, b){
+        return b - a;
+    })
+    console.log(arr[0]);
 }
 
-// console.log(capitalSent("HellO WorLd this iS a seNtEnce"));
-capitalSent("HellO WorLd this iS a seNtEnce");
-capitalSent("HellO uNIverSe this iS a WOrd");
-capitalSent("HellO CouNtRy this iS a NumBEr");
+// console.log(maximum([12, 34, 56, 78]));
+maximum([12, 34, 56, 78]);
+maximum([12, 3334, 526, 7]);
+maximum([129, 434, 5556, 738]);
+
+
+
+
+
